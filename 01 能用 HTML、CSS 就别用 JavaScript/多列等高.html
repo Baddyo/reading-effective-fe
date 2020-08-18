@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+        }
+
+        .item {
+            box-sizing: border-box;
+            width: 100px;
+            padding: 10px;
+            background-color: pink;
+        }
+    </style>
+    <style>
+        /* flex 实现方式 */
+        .box.flex {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+    <style>
+        /* table 实现方式 */
+        .box.table .item {
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>方法一：Flex</h2>
+    <div class="box flex">
+        <div class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, architecto veniam, autem ad corrupti earum
+            qui iure, omnis nesciunt nulla numquam accusamus a perspiciatis inventore repellat minus voluptates
+            consectetur at!eum at.
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. .
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi saepe odio vero illum natus sequi dolor
+            placeat sed v
+        </div>
+        <div class="item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem sit eius corporis error eos illo. Eaque
+            nulla quae voluptate, ea corrupti fuga officiis laudantium
+        </div>
+    </div>
+    <h2>方法二：Table</h2>
+    <table class="box table">
+        <td class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, architecto veniam, autem ad corrupti earum
+            qui iure, omnis nesciunt nulla numquam accusamus a perspiciatis inventore repellat minus voluptates
+            consectetur at!eum at.
+        </td>
+        <td class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. .
+        </td>
+        <td class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi saepe odio vero illum natus sequi dolor
+            placeat sed v
+        </td>
+        <td class="item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem sit eius corporis error eos illo. Eaque
+            nulla quae voluptate, ea corrupti fuga officiis laudantium
+        </td>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        * {
+            font-size: 0;
+        }
+
+        a {
+            color: #000;
+            display: inline-block;
+        }
+
+        .nav-item {
+            display: inline-block;
+            padding: 10px 20px;
+            opacity: 0.5;
+            background-color: pink;
+            font-size: 18px;
+        }
+
+        .nav-item:hover {
+            opacity: 1;
+        }
+
+        .home .nav-home {
+            opacity: 1;
+        }
+
+        .drop-nav {
+            position: relative;
+        }
+
+        .drop-list {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            padding: 0;
+            display: none;
+        }
+
+        .drop-list li {
+            font-size: 16px;
+            text-decoration: none;
+            background-color: skyblue;
+            width: 80px;
+            list-style: none;
+            text-align: center;
+        }
+
+        .drop-nav:hover .drop-list {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="home">
+    <ul>
+        <a href='home.html'>
+            <li class="nav-item nav-home">首页</li>
+        </a>
+        <a class="drop-nav" href='page1.html'>
+            <li class="nav-item nav-page1">页面1</li>
+            <ul class="drop-list">
+                <li class="drop-item">下拉1</li>
+                <li class="drop-item">下拉2</li>
+                <li class="drop-item">下拉3</li>
+            </ul>
+        </a>
+        <a href='page2.html'>
+            <li class="nav-item nav-page2">页面2</li>
+        </a>
+        <a href='page3.html'>
+            <li class="nav-item nav-page3">页面3</li>
+        </a>
+        <a href='page4.html'>
+            <li class="nav-item nav-page4">页面4</li>
+        </a>
+    </ul>
+</body>
+
+</html>

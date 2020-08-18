@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rdo input {
+            display: none;
+        }
+
+        .rdo .btn {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background-color: transparent;
+            border: 1px solid gray;
+        }
+
+        .rdo input[type=radio]:checked+.btn {
+            background-color: skyblue;
+            border-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <label class="rdo" for='rd1'><input type="radio" name="a" id="rd1"><span class="btn"></span>RD 1</label>
+    <label class="rdo" for='rd2'><input type="radio" name="a" id="rd2"><span class="btn"></span>RD 2</label>
+</body>
+
+</html>
