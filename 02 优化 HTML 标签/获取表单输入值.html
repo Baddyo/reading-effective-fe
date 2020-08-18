@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/a" id="form1">
+        <input type="text" name="id">
+        <input type="text" name="name">
+        <input type="text" name="address">
+    </form>
+
+    <script>
+        let form1 = document.forms.namedItem('form1');
+        console.log(form1.name.value);
+    </script>
+</body>
+</html>
