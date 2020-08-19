@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+    </style>
+    <style>
+        /* 等腰 */
+        .trang {
+            border: 50px solid peru;
+            width: 0px;
+            height: 0px;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-top-width: 0;
+        }
+    </style>
+    <style>
+        /* 等边 */
+        .trang2 {
+            border-left-width: 25px;
+            border-right-width: 25px;
+            /* 25 乘以根号 3  */
+            border-bottom-width: 43px;
+        }
+    </style>
+    <style>
+        /* 带边框 */
+        .box {
+            width: 120px;
+            height: 40px;
+            border: 2px solid #333;
+            border-radius: 6px;
+            position: relative;
+            margin-left: 30px;
+        }
+
+        .box::before {
+            /* z-index: 2; */
+            content: '';
+            display: block;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(-100%, -50%);
+            border: 10px solid #333;
+            border-left-width: 0;
+            border-bottom-color: transparent;
+            border-top-color: transparent;
+        }
+
+        .box::after {
+            /* z-index: 2; */
+            content: '';
+            display: block;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            left: 2px;
+            top: 50%;
+            transform: translate(-100%, -50%);
+            border: 10px solid #ccc;
+            border-left-width: 0;
+            border-bottom-color: transparent;
+            border-top-color: transparent;
+        }
+    </style>
+    <style>
+        .box1 {
+            filter: drop-shadow(0 0 4px #333);
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>用 border 实现</h2>
+    <h3>等腰三角形</h3>
+    <div class="trang trang1"></div>
+    <h3>等边三角形</h3>
+    <div class="trang trang2"></div>
+    <h3>三角形带边框</h3>
+    <div class="box"></div>
+    <h3>带阴影</h3>
+    <div class="box box1"></div>
+</body>
+
+</html>
