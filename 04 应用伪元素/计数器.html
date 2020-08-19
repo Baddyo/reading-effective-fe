@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .options{
+            counter-reset: num;
+        }
+        .options input:checked{
+            counter-increment: num;
+        }
+        .counter::before{
+            content: counter(num);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="options">
+        <label for="html"><input type="checkbox" name="" id="html">HTML</label>
+        <label for="js"><input type="checkbox" name="" id="js">JavaScript</label>
+        <label for="css"><input type="checkbox" name="" id="css">CSS</label>
+        <label for="vue"><input type="checkbox" name="" id="vue">Vue</label>
+        <label for="ts"><input type="checkbox" name="" id="ts">TypeScript</label>
+        <label for="alg"><input type="checkbox" name="" id="alg">Algrithm</label>
+
+    </div>
+    <p>你选择了<span class="counter"></span>个选项。</p>
+    <p>更多玩法见：<a href="https://una.im/css-games/">https://una.im/css-games/</a></p>
+</body>
+
+</html>

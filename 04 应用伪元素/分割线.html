@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .split{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .split>span{
+            margin:0 10px;
+        }
+        .split::before{
+            content: '';
+            display: block;
+            width: calc(50% - 100px);
+            height: 1px;
+            background-color: orangered;
+        }
+        .split::after{
+            content: '';
+            display: block;
+            width: calc(50% - 100px);
+            height: 1px;
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur rerum, illo quos accusantium officiis error doloremque. Veritatis nihil repellendus perferendis delectus aspernatur magni tenetur, facilis odio quisquam temporibus placeat perspiciatis?</p>
+    <div class="split"><span>分割线</span></div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore assumenda incidunt et quod, consectetur at excepturi provident suscipit molestias quos deserunt vitae fuga dolor recusandae eum. Exercitationem amet natus modi?</p>
+</body>
+</html>
