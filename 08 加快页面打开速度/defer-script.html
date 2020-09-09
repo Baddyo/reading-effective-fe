@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="defer.js" defer></script>
+</head>
+<body>
+    <script>
+        document.onreadystatechange=function(){
+            console.log('STATE', document.readyState);
+        }
+    </script>
+    <script>
+        window.onload = function () {
+            console.log('Window is loaded');
+        };
+
+        window.addEventListener('DOMContentLoaded',function(){
+            console.log('DOM is ready');
+        });
+    </script>
+    <h1>DEFER</h1>
+    <script src="normal.js"></script>
+    <script>
+        console.log('DOM is almost built');
+    </script>
+</body>
+</html>

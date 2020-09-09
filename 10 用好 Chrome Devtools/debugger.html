@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tooltip{
+            display: none;
+        }
+        /* #text:hover+#tooltip{
+            display: block;
+        } */
+    </style>
+</head>
+
+<body>
+    <p id="t">Lalala</p>
+    <p id="tooltip">TOOLTIP</p>
+    <script>
+        let t = document.getElementById('t');
+        t.addEventListener('mouseover',()=>{
+            document.querySelector('#tooltip').style.display='block';
+        });
+        t.addEventListener('mouseout',()=>{
+            document.querySelector('#tooltip').style.display='none';
+        });
+    </script>
+    <script>
+        // for (let i = 0; i < 10; i++) {
+        //     // if (i > 5) {
+        //     //     debugger;
+        //     // }
+        //     console.log(i);
+        // }
+    </script>
+</body>
+
+</html>
